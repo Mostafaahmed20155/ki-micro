@@ -1,0 +1,71 @@
+.contact-us {
+    margin-top: 10rem;
+    padding: 0 15rem;
+    display: flex;
+    justify-content: space-between;
+    .left-col {
+        .section-sub-title {
+            @include SFSemiBold(2.5rem);
+            position: relative;
+            padding-left: 8rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 45%;
+                // transform: translateY(-50%);
+                width: 6rem;
+                height: 3px;
+                background-color: $black;
+            }
+        }
+        .section-title {
+            @include SFBold(7rem);
+            margin: 0;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        form {
+            .input {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 1.5rem;
+                label {
+                    @include SFSemiBold (1.75rem);
+                    margin-bottom: 1rem;
+                }
+                input {
+                    padding: 1rem;
+                    @include SFRegular (1.75rem);
+                }
+            }
+            label {
+                @include SFRegular (1.75rem);
+                margin-bottom: 1rem;
+            }
+            .radio-selections {
+                margin: 1rem 0;
+                display: flex;
+                .single-option {
+                    &:not(:last-of-type) {
+                        margin-right: 1.5rem;
+                    }
+                }
+            }
+            .contact-us-btn {
+                @include SFSemiBold (1.75rem);
+                color: $white;
+                width: 100%;
+                padding: 1.5rem 1rem;
+                background-color: $black;
+                border: none;
+                border-radius: 5px;
+                margin-top: 2.5rem;
+            }
+        }
+    }
+    .right-col {
+        position: relative;
+        margin-left: 10rem;
+    }
+}

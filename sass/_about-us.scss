@@ -1,0 +1,161 @@
+.info-section {
+    margin-top: 10rem;
+    padding: 0 15rem;
+    display: flex;
+    justify-content: space-between;
+    .left-col {
+        .section-sub-title {
+            @include SFSemiBold(2.5rem);
+            position: relative;
+            padding-left: 8rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 45%;
+                // transform: translateY(-50%);
+                width: 6rem;
+                height: 3px;
+                background-color: $black;
+            }
+        }
+        .section-title {
+            @include SFBold(7rem);
+            margin: 0;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .ind-corp-cont {
+            display: flex;
+            .ind-corp-title {
+                @include SFSemiBold(2.25rem);
+                text-decoration: underline;
+                margin-right: 2.5rem;
+            }
+            .ind-corp-text {
+                @include SFRegular (2.25rem);
+                font-weight: 400;
+            }
+        }
+        .info-section-btn {
+            @include SFSemiBold (2.5rem);
+            background-color: $black;
+            color: $white;
+            padding: 1.5rem 2.5rem;
+            border: none;
+            margin-top: 4rem;
+            &:hover {
+                transition: all .3s;
+                background-color: #999999;
+            }
+        }
+    }
+    .right-col {
+        position: relative;
+    }
+}
+
+
+.info-section-2 {
+    margin-top: 20rem;
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    .left-col {
+        .section-sub-title {
+            @include SFSemiBold(2.5rem);
+            position: relative;
+            padding-left: 8rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 45%;
+                // transform: translateY(-50%);
+                width: 6rem;
+                height: 3px;
+                background-color: $black;
+            }
+        }
+        .section-title {
+            @include SFBold(7rem);
+            margin: 0;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .info-text {
+            @include SFRegular (2.25rem);
+            font-family: 400;
+            line-height: 4rem
+        }
+        .info-section-btn {
+            @include SFSemiBold (2.5rem);
+            background-color: $black;
+            color: $white;
+            padding: 1.5rem 2.5rem;
+            border: none;
+            margin-top: 4rem;
+            &:hover {
+                transition: all .3s;
+                background-color: #999999;
+            }
+        }
+    }
+    .right-col {
+        position: relative;
+        margin-right: 10rem;
+    }
+}
+
+
+.info-section-3 {
+    margin-top: 20rem;
+    padding: 0 15rem;
+    display: flex;
+    justify-content: space-between;
+    .left-col {
+        .section-sub-title {
+            @include SFSemiBold(2.5rem);
+            position: relative;
+            padding-left: 8rem;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 45%;
+                // transform: translateY(-50%);
+                width: 6rem;
+                height: 3px;
+                background-color: $black;
+            }
+        }
+        .section-title {
+            @include SFBold(7rem);
+            margin: 0;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .info-text {
+            @include SFRegular (2.25rem);
+            font-family: 400;
+            line-height: 4rem
+        }
+        .info-section-btn {
+            @include SFSemiBold (2.5rem);
+            background-color: $black;
+            color: $white;
+            padding: 1.5rem 2.5rem;
+            border: none;
+            margin-top: 4rem;
+            &:hover {
+                transition: all .3s;
+                background-color: #999999;
+            }
+        }
+    }
+    .right-col {
+        position: relative;
+        margin-left: 10rem;
+    }
+}

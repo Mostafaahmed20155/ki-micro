@@ -1,0 +1,79 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15rem;
+  padding-top: 3rem;
+  nav {
+    display: flex;
+    align-items: center;
+    .nav-item {
+      @include SFSemiBold(1.5rem);
+      color: #999999;
+      padding-bottom: 1rem;
+      transition: all .3s;
+      position: relative;
+      &:not(:last-of-type) {
+        margin-right: 1.5rem;
+      }
+      &:not(:first-of-type) {
+        margin-left: 1.5rem;
+      }
+      &::after {
+        content: "";
+        transition: all .3s;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: $black;
+        left: 0;
+        bottom: 0;
+      }
+      &:hover {
+        color: $black !important;
+        position: relative;
+        transition: all .3s;
+        &::after {
+          content: "";
+          transition: all .3s;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: $black;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $black;
+    }
+  }
+  .nav-selected {
+    color: $black !important;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100% !important;
+      height: 2px;
+      background-color: $black;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .nav-contact-us-btn {
+      padding: 1.25rem;
+      background-color: $black;
+      border-radius: 5px;
+      color: $white;
+      @include SFSemiBold(1.75rem);
+      border: none;
+      &:hover {
+        transition: all .3s;
+        background-color: #999999;
+      }
+  }
+}

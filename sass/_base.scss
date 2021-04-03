@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: SFHeavy;
+    src: url("../fonts/SFUIText-Heavy.ttf");
+}
+
+@font-face {
+    font-family: SFBold;
+    src: url("../fonts/SFUIText-Bold.ttf");
+}
+
+@font-face {
+    font-family: SFSemiBold;
+    src: url("../fonts/SFUIText-Semibold.ttf");
+}
+    @font-face {
+    font-family: SFItalicSemiBold;
+    src: url("../fonts/SFUIText-SemiboldItalic.ttf");
+}
+
+@font-face {
+    font-family: SFMedium;
+    src: url("../fonts/SFUIText-Medium.ttf");
+}
+
+@font-face {
+    font-family: SFRegular;
+    src: url("../fonts/SFUIText-Regular.ttf");
+}
+
+body {
+    font-family: SFSemiBold;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    h1,h2,h3 {
+        color: black;
+    }
+    // padding: 0 15rem;
+}

@@ -1,0 +1,701 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: SFHeavy;
+  src: url("../fonts/SFUIText-Heavy.ttf"); }
+
+@font-face {
+  font-family: SFBold;
+  src: url("../fonts/SFUIText-Bold.ttf"); }
+
+@font-face {
+  font-family: SFSemiBold;
+  src: url("../fonts/SFUIText-Semibold.ttf"); }
+
+@font-face {
+  font-family: SFItalicSemiBold;
+  src: url("../fonts/SFUIText-SemiboldItalic.ttf"); }
+
+@font-face {
+  font-family: SFMedium;
+  src: url("../fonts/SFUIText-Medium.ttf"); }
+
+@font-face {
+  font-family: SFRegular;
+  src: url("../fonts/SFUIText-Regular.ttf"); }
+
+body {
+  font-family: SFSemiBold; }
+  body a {
+    color: black;
+    text-decoration: none; }
+  body h1, body h2, body h3 {
+    color: black; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15rem;
+  padding-top: 3rem; }
+  header nav {
+    display: flex;
+    align-items: center; }
+    header nav .nav-item {
+      font-family: SFSemiBold;
+      font-size: 1.5rem;
+      color: #999999;
+      padding-bottom: 1rem;
+      transition: all .3s;
+      position: relative; }
+      header nav .nav-item:not(:last-of-type) {
+        margin-right: 1.5rem; }
+      header nav .nav-item:not(:first-of-type) {
+        margin-left: 1.5rem; }
+      header nav .nav-item::after {
+        content: "";
+        transition: all .3s;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #000000;
+        left: 0;
+        bottom: 0; }
+      header nav .nav-item:hover {
+        color: #000000 !important;
+        position: relative;
+        transition: all .3s; }
+        header nav .nav-item:hover::after {
+          content: "";
+          transition: all .3s;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #000000;
+          left: 0;
+          bottom: 0; }
+    header nav .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #000000; }
+  header .nav-selected {
+    color: #000000 !important;
+    position: relative; }
+    header .nav-selected::after {
+      content: "";
+      position: absolute;
+      width: 100% !important;
+      height: 2px;
+      background-color: #000000;
+      left: 0;
+      bottom: 0; }
+  header .nav-contact-us-btn {
+    padding: 1.25rem;
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: SFSemiBold;
+    font-size: 1.75rem;
+    border: none; }
+    header .nav-contact-us-btn:hover {
+      transition: all .3s;
+      background-color: #999999; }
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10rem; }
+  .hero-section .hero-title {
+    font-family: SFBold;
+    font-size: 5rem; }
+  .hero-section .individual-usage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; }
+  .hero-section .corporate-usage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; }
+    .hero-section .corporate-usage .form-cont {
+      background-color: #000000;
+      width: 70%;
+      padding: 2.5rem;
+      border-radius: 10px;
+      background: linear-gradient(0, #FFFFFF 50%, #000000 50%); }
+      .hero-section .corporate-usage .form-cont form {
+        background-color: #FFFFFF;
+        box-shadow: 0 3px 2rem rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        padding: 2rem; }
+        .hero-section .corporate-usage .form-cont form .input {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1.5rem; }
+          .hero-section .corporate-usage .form-cont form .input label {
+            font-family: SFSemiBold;
+            font-size: 1.75rem;
+            margin-bottom: 1rem; }
+          .hero-section .corporate-usage .form-cont form .input input {
+            padding: 1.5rem;
+            border: 1px solid #9A9A9A;
+            border-radius: 5px;
+            font-family: SFSemiBold;
+            font-size: 1.5rem; }
+        .hero-section .corporate-usage .form-cont form .corporate-usage-btn {
+          width: 100%;
+          padding: 1.5rem;
+          margin-top: 2.5rem;
+          font-family: SFSemiBold;
+          font-size: 2rem;
+          color: #FFFFFF;
+          background-color: #000000;
+          border-radius: 5px;
+          border: none; }
+
+.corporate-stages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16rem; }
+  .corporate-stages .stages-cont {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    .corporate-stages .stages-cont .single-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .corporate-stages .stages-cont .single-stage .single-stage__paragraph {
+        text-align: center;
+        font-family: SFRegular;
+        font-size: 2.25rem; }
+
+.secondary-title {
+  font-family: SFSemiBold;
+  font-size: 5rem;
+  margin-bottom: 10rem; }
+
+.inspiration-section {
+  margin-top: 10rem;
+  padding: 0 15rem; }
+  .inspiration-section .section-sub-title {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    position: relative;
+    padding-left: 8rem; }
+    .inspiration-section .section-sub-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 45%;
+      width: 6rem;
+      height: 3px;
+      background-color: #000000; }
+  .inspiration-section .section-title {
+    font-family: SFBold;
+    font-size: 7rem;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  .inspiration-section .inspiration-paragraph {
+    font-family: SFRegular;
+    font-size: 2rem;
+    line-height: 4rem; }
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem; }
+  .what-we-do .options-container {
+    position: relative; }
+    .what-we-do .options-container .ki-logo {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      width: 15%; }
+  .what-we-do .circle-container {
+    position: relative;
+    width: 60em;
+    height: 60em;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none;
+    margin: 5em auto 0;
+    border: solid 5px #EFEFEF; }
+    .what-we-do .circle-container > * {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 6em;
+      height: 6em;
+      margin: -3em; }
+      .what-we-do .circle-container > *:nth-of-type(1) {
+        transform: rotate(0deg) translate(30em) rotate(0deg); }
+      .what-we-do .circle-container > *:nth-of-type(2) {
+        transform: rotate(45deg) translate(30em) rotate(-45deg); }
+      .what-we-do .circle-container > *:nth-of-type(3) {
+        transform: rotate(90deg) translate(30em) rotate(-90deg); }
+      .what-we-do .circle-container > *:nth-of-type(4) {
+        transform: rotate(135deg) translate(30em) rotate(-135deg); }
+      .what-we-do .circle-container > *:nth-of-type(5) {
+        transform: rotate(180deg) translate(30em) rotate(-180deg); }
+      .what-we-do .circle-container > *:nth-of-type(6) {
+        transform: rotate(225deg) translate(30em) rotate(-225deg); }
+      .what-we-do .circle-container > *:nth-of-type(7) {
+        transform: rotate(270deg) translate(30em) rotate(-270deg); }
+      .what-we-do .circle-container > *:nth-of-type(8) {
+        transform: rotate(315deg) translate(30em) rotate(-315deg); }
+    .what-we-do .circle-container img {
+      display: block;
+      max-width: 100%;
+      filter: grayscale(100%);
+      transition: .15s; }
+      .what-we-do .circle-container img:hover, .what-we-do .circle-container img:active {
+        filter: grayscale(0); }
+
+footer {
+  height: 10rem;
+  padding: 0;
+  background-color: #000000;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15rem; }
+  footer .copy-right .copy-right-text {
+    color: #FFFFFF;
+    font-family: SFRegular;
+    font-size: 1.5rem; }
+  footer .terms-and-conditions {
+    display: flex;
+    align-items: center; }
+    footer .terms-and-conditions .terms-and-conditions-text {
+      color: #FFFFFF;
+      font-family: SFRegular;
+      font-size: 1.5rem; }
+    footer .terms-and-conditions a {
+      color: #FFFFFF;
+      font-family: SFRegular;
+      font-size: 1.5rem;
+      margin-left: 1rem; }
+  footer .social-media-icons img:not(:last-of-type) {
+    margin-right: 3rem; }
+
+.u-margin-bot-s {
+  margin-bottom: 6.5rem; }
+
+.info-section-4 {
+  margin-top: 10rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between; }
+  .info-section-4 .left-col .section-sub-title {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    position: relative;
+    padding-left: 8rem; }
+    .info-section-4 .left-col .section-sub-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 45%;
+      width: 6rem;
+      height: 3px;
+      background-color: #000000; }
+  .info-section-4 .left-col .section-title {
+    font-family: SFBold;
+    font-size: 7rem;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  .info-section-4 .left-col .info-text {
+    font-family: SFRegular;
+    font-size: 2.25rem;
+    font-family: 400;
+    line-height: 4rem; }
+  .info-section-4 .left-col .info-section-btn {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 1.5rem 2.5rem;
+    border: none;
+    margin-top: 4rem; }
+    .info-section-4 .left-col .info-section-btn:hover {
+      transition: all .3s;
+      background-color: #999999; }
+  .info-section-4 .right-col {
+    position: relative;
+    margin-left: 10rem; }
+
+.our-mission {
+  margin-top: 10rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between; }
+  .our-mission .left-col {
+    width: 50%; }
+    .our-mission .left-col .section-sub-title {
+      font-family: SFSemiBold;
+      font-size: 2.5rem;
+      position: relative;
+      padding-left: 8rem; }
+      .our-mission .left-col .section-sub-title::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 45%;
+        width: 6rem;
+        height: 3px;
+        background-color: #000000; }
+    .our-mission .left-col .section-title {
+      font-family: SFBold;
+      font-size: 7rem;
+      margin: 0;
+      margin-top: 4rem;
+      margin-bottom: 4rem; }
+    .our-mission .left-col .info-text {
+      font-family: SFRegular;
+      font-size: 2.25rem;
+      font-family: 400;
+      line-height: 4rem; }
+    .our-mission .left-col .info-text-mission {
+      font-family: SFItalicSemiBold;
+      font-size: 2.25rem;
+      background-color: #F7F7F7;
+      padding-left: 2.5rem;
+      position: relative; }
+      .our-mission .left-col .info-text-mission::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 6px;
+        left: 0;
+        bottom: 0;
+        background-color: #000000; }
+    .our-mission .left-col .logo-big {
+      margin-top: 4rem; }
+    .our-mission .left-col .info-section-btn {
+      font-family: SFSemiBold;
+      font-size: 2.5rem;
+      background-color: #000000;
+      color: #FFFFFF;
+      padding: 1.5rem 2.5rem;
+      border: none;
+      margin-top: 4rem; }
+      .our-mission .left-col .info-section-btn:hover {
+        transition: all .3s;
+        background-color: #999999; }
+  .our-mission .right-col {
+    width: 50%;
+    position: relative;
+    margin-left: 10rem; }
+    .our-mission .right-col .secondary-title {
+      margin: 0; }
+    .our-mission .right-col .our-misison-text-pic {
+      width: 100%; }
+    .our-mission .right-col .info-text {
+      font-family: SFRegular;
+      font-size: 2.25rem;
+      font-family: 400;
+      line-height: 4rem; }
+      .our-mission .right-col .info-text span {
+        font-family: SFSemiBold;
+        font-size: 2.25rem; }
+
+.our-team {
+  margin-top: 10rem;
+  padding: 0 15rem;
+  display: flex;
+  flex-direction: column; }
+  .our-team .team-info-cont {
+    display: flex;
+    justify-content: space-between; }
+    .our-team .team-info-cont .left-col .section-sub-title {
+      font-family: SFSemiBold;
+      font-size: 2.5rem;
+      position: relative;
+      padding-left: 8rem; }
+      .our-team .team-info-cont .left-col .section-sub-title::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 45%;
+        width: 6rem;
+        height: 3px;
+        background-color: #000000; }
+    .our-team .team-info-cont .left-col .section-title {
+      font-family: SFBold;
+      font-size: 7rem;
+      margin: 0;
+      margin-top: 4rem;
+      margin-bottom: 4rem; }
+    .our-team .team-info-cont .left-col .info-text {
+      font-family: SFRegular;
+      font-size: 2.25rem;
+      font-family: 400;
+      line-height: 4rem; }
+    .our-team .team-info-cont .left-col .info-section-btn {
+      font-family: SFSemiBold;
+      font-size: 2.5rem;
+      background-color: #000000;
+      color: #FFFFFF;
+      padding: 1.5rem 2.5rem;
+      border: none;
+      margin-top: 4rem; }
+      .our-team .team-info-cont .left-col .info-section-btn:hover {
+        transition: all .3s;
+        background-color: #999999; }
+    .our-team .team-info-cont .right-col {
+      position: relative;
+      margin-left: 10rem; }
+  .our-team .team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .our-team .team-members .container {
+      position: relative;
+      width: 48%; }
+      .our-team .team-members .container .email-phone-cont {
+        display: flex;
+        margin-bottom: 1rem; }
+        .our-team .team-members .container .email-phone-cont h1 {
+          margin-left: 1.5rem; }
+    .our-team .team-members .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden; }
+    .our-team .team-members .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center; }
+      .our-team .team-members .middle .name {
+        color: white;
+        font-family: SFBold;
+        font-size: 3.5rem;
+        color: #000000; }
+      .our-team .team-members .middle .title {
+        font-family: SFRegular;
+        font-size: 3rem;
+        color: #999999; }
+    .our-team .team-members .container:hover .image {
+      opacity: 0.3; }
+    .our-team .team-members .container:hover .middle {
+      opacity: 1; }
+
+.info-section {
+  margin-top: 10rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between; }
+  .info-section .left-col .section-sub-title {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    position: relative;
+    padding-left: 8rem; }
+    .info-section .left-col .section-sub-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 45%;
+      width: 6rem;
+      height: 3px;
+      background-color: #000000; }
+  .info-section .left-col .section-title {
+    font-family: SFBold;
+    font-size: 7rem;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  .info-section .left-col .ind-corp-cont {
+    display: flex; }
+    .info-section .left-col .ind-corp-cont .ind-corp-title {
+      font-family: SFSemiBold;
+      font-size: 2.25rem;
+      text-decoration: underline;
+      margin-right: 2.5rem; }
+    .info-section .left-col .ind-corp-cont .ind-corp-text {
+      font-family: SFRegular;
+      font-size: 2.25rem;
+      font-weight: 400; }
+  .info-section .left-col .info-section-btn {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 1.5rem 2.5rem;
+    border: none;
+    margin-top: 4rem; }
+    .info-section .left-col .info-section-btn:hover {
+      transition: all .3s;
+      background-color: #999999; }
+  .info-section .right-col {
+    position: relative; }
+
+.info-section-2 {
+  margin-top: 20rem;
+  padding: 0 15rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between; }
+  .info-section-2 .left-col .section-sub-title {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    position: relative;
+    padding-left: 8rem; }
+    .info-section-2 .left-col .section-sub-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 45%;
+      width: 6rem;
+      height: 3px;
+      background-color: #000000; }
+  .info-section-2 .left-col .section-title {
+    font-family: SFBold;
+    font-size: 7rem;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  .info-section-2 .left-col .info-text {
+    font-family: SFRegular;
+    font-size: 2.25rem;
+    font-family: 400;
+    line-height: 4rem; }
+  .info-section-2 .left-col .info-section-btn {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 1.5rem 2.5rem;
+    border: none;
+    margin-top: 4rem; }
+    .info-section-2 .left-col .info-section-btn:hover {
+      transition: all .3s;
+      background-color: #999999; }
+  .info-section-2 .right-col {
+    position: relative;
+    margin-right: 10rem; }
+
+.info-section-3 {
+  margin-top: 20rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between; }
+  .info-section-3 .left-col .section-sub-title {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    position: relative;
+    padding-left: 8rem; }
+    .info-section-3 .left-col .section-sub-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 45%;
+      width: 6rem;
+      height: 3px;
+      background-color: #000000; }
+  .info-section-3 .left-col .section-title {
+    font-family: SFBold;
+    font-size: 7rem;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  .info-section-3 .left-col .info-text {
+    font-family: SFRegular;
+    font-size: 2.25rem;
+    font-family: 400;
+    line-height: 4rem; }
+  .info-section-3 .left-col .info-section-btn {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 1.5rem 2.5rem;
+    border: none;
+    margin-top: 4rem; }
+    .info-section-3 .left-col .info-section-btn:hover {
+      transition: all .3s;
+      background-color: #999999; }
+  .info-section-3 .right-col {
+    position: relative;
+    margin-left: 10rem; }
+
+.contact-us {
+  margin-top: 10rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between; }
+  .contact-us .left-col .section-sub-title {
+    font-family: SFSemiBold;
+    font-size: 2.5rem;
+    position: relative;
+    padding-left: 8rem; }
+    .contact-us .left-col .section-sub-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 45%;
+      width: 6rem;
+      height: 3px;
+      background-color: #000000; }
+  .contact-us .left-col .section-title {
+    font-family: SFBold;
+    font-size: 7rem;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+  .contact-us .left-col form .input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem; }
+    .contact-us .left-col form .input label {
+      font-family: SFSemiBold;
+      font-size: 1.75rem;
+      margin-bottom: 1rem; }
+    .contact-us .left-col form .input input {
+      padding: 1rem;
+      font-family: SFRegular;
+      font-size: 1.75rem; }
+  .contact-us .left-col form label {
+    font-family: SFRegular;
+    font-size: 1.75rem;
+    margin-bottom: 1rem; }
+  .contact-us .left-col form .radio-selections {
+    margin: 1rem 0;
+    display: flex; }
+    .contact-us .left-col form .radio-selections .single-option:not(:last-of-type) {
+      margin-right: 1.5rem; }
+  .contact-us .left-col form .contact-us-btn {
+    font-family: SFSemiBold;
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2.5rem; }
+  .contact-us .right-col {
+    position: relative;
+    margin-left: 10rem; }
