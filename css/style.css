@@ -699,3 +699,90 @@ footer {
   .contact-us .right-col {
     position: relative;
     margin-left: 10rem; }
+
+.donation-info {
+  width: 50rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 2rem rgba(0, 0, 0, 0.12);
+  padding: 3.5rem; }
+  .donation-info .single-info {
+    display: flex;
+    justify-content: space-between; }
+    .donation-info .single-info .title {
+      color: #B2B2B2;
+      font-family: SFSemiBold;
+      font-size: 1.75rem; }
+    .donation-info .single-info .value {
+      font-family: SFSemiBold;
+      font-size: 1.75rem; }
+
+.individual-cont {
+  width: 100%;
+  min-height: 10rem;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 3px 2rem rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .individual-cont hr {
+    background-color: #B2B2B2;
+    color: #B2B2B2;
+    width: 100%; }
+  .individual-cont .title {
+    font-family: SFSemiBold;
+    font-size: 2rem; }
+  .individual-cont .single-item {
+    display: flex;
+    margin-right: 5rem; }
+    .individual-cont .single-item .value {
+      margin-left: 5rem;
+      font-family: SFSemiBold;
+      font-size: 1.75rem; }
+
+.corporate-cont {
+  width: 100%;
+  min-height: 10rem;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 2rem rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .corporate-cont hr {
+    background-color: #B2B2B2;
+    color: #B2B2B2;
+    width: 100%; }
+  .corporate-cont .title {
+    font-family: SFSemiBold;
+    font-size: 2rem; }
+  .corporate-cont .items {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; }
+    .corporate-cont .items .single-item {
+      display: flex;
+      margin-right: 2.5rem;
+      margin-left: 2.5rem; }
+      .corporate-cont .items .single-item .value {
+        margin-left: 3rem;
+        font-family: SFSemiBold;
+        font-size: 1.75rem; }
+
+.partners-cont {
+  display: flex;
+  flex-direction: column; }
+  .partners-cont .single-logo {
+    width: 12.5%;
+    margin-right: 3rem;
+    margin-bottom: 2rem; }
+
+.logos-cont {
+  width: 100%;
+  display: flex;
+  min-height: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between; }
